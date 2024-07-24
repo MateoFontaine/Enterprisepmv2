@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem 4rem;
 }
 
 
@@ -59,7 +59,7 @@ header{
 }
 
 .nav-link{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: white;
     transition: 500ms;
@@ -113,7 +113,7 @@ header{
     transition: 500ms;
     background-color: #4747472d;
     width: 250px;
-    text-decoration: underline;
+    font-size: 1rem;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -121,26 +121,33 @@ header{
 }
 
 /* Show Dropdown Menu on Hover for Desktop */
-@media (min-width: 1363px) {
+@media (min-width: 1261px) {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 1382px) {
+@media only screen and (max-width: 1260px) {
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #47474765;
+        background-color: #47474765;    
         width: 100%;
         border-radius: 0px 0px 10px 10px;
         text-align: start;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         
+    }
+    .navbar{
+        padding: 1rem 1rem;
+
+    }
+    .navbar a img{
+        width: 10rem;
     }
 
     .nav-menu.active {
@@ -153,7 +160,7 @@ header{
     }
 
     .nav-link{
-    text-decoration: underline;
+    text-decoration: none;
     }
 
     .hamburger {
@@ -188,12 +195,24 @@ header{
     .dropdown-menu .dropdown-item {
         background-color: transparent; /* Ensure dropdown items are visible on mobile */
     }
+
 }
 /* FIN NAVBAR */
 
+/* Property Managment */
+.PropertyManagment{
+    color: white;
+    margin: 2rem 20vw;
+}
+@media only screen and (max-width: 765px){
+    .PropertyManagment{
+        color: white;
+        margin: 2rem 10vw;
+    }
+    
+}
 
-
-/* Main */
+/* About */
 .about{
     display: flex;
     flex-wrap: wrap;
@@ -212,7 +231,7 @@ header{
     width: 400px;
 }
 .text_about p{
-    font-size: 1.1em;
+    font-size: 1.3rem;
 }
 .linea{
     height: 2px;
@@ -221,72 +240,83 @@ header{
     margin: .6rem 0rem;
 }
 .about img{
-    min-width: 380px;
-    max-width: 100px;
+    min-width: 200px;
+    max-width: 500px;
 }
-
-/* FOOTER */
-
-
-footer {
-    background-color: #f8f8f8;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.elementosFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.logoYtextos {
-    display: flex;
-    gap: 40px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.logoYtextos .logoFooter {
-    width:  auto;
-    height: 40px;
-}
-
-.logoYtextos p {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-    color: #555;
-    font-size: 14px;
+@media only screen and (max-width: 765px){
+    .about{
+        margin: 2rem;
+    }
+    .text_about p{
+        font-size: 1rem;
+    }
     
 }
 
-.redesFooter {
+/* Enviar Correo */
+.enviarEmail{
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+    background-color: white;
+    gap: 1rem;
+}
+.enviarEmail input{
+    padding: .5rem ;
+    width: 30%;
+}
+.enviarEmail button{
+    padding: .6rem 2rem;
+    color: white;
+    background-color: #00316B;
+    border: 1px solid #00316B;
+    transition: 500ms;
+    border-radius: 0px 3px 3px 0px;
+}
+.enviarEmail button:hover{
+    color: #00316B;
+    background-color: white;
+    border: 1px solid #00316B;
+}
+@media only screen and (max-width: 765px){
+    .enviarEmail input{
+        padding: .5rem ;        width: 40%;
+    }
+
 }
 
-.redesFooter a img {
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: #fff;
-    transition: transform 0.3s;
-    box-shadow:0 10px 15px -7px rgba(0, 0, 0, 0.75);
 
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00316B;
+    flex-direction: column;
 }
-
-.redesFooter a img:hover {
-    transform: scale(1.1);
+footer p {
+    color: gray;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 0rem;
+    gap: 1rem;
+}
+.redes ul li a{
+    color: white;
+}
+.footer img{
+    width: 20rem;
 }
 
 @media only screen and (max-width: 563px){
-    .logoYtextos{
-        flex-flow: column;
-        align-items: center;
-        gap: 20px;
-    }
+    
 }
 /* FIN FOOTER */
