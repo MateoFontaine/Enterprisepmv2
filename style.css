@@ -128,7 +128,7 @@ header{
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 1362px) {
+@media only screen and (max-width: 1382px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -200,9 +200,9 @@ header{
     justify-content: center;
     align-items: top;
     color: white;
-    margin: 3rem 0rem;
+    margin: 2rem 0rem;
     font-size: 1rem;
-    gap: 2rem;
+    gap: 20px;
 }
 .text_about{
     display: flex;
@@ -211,6 +211,9 @@ header{
     align-items: start;
     width: 400px;
 }
+.text_about p{
+    font-size: 1.1em;
+}
 .linea{
     height: 2px;
     width: 90px;
@@ -218,7 +221,7 @@ header{
     margin: .6rem 0rem;
 }
 .about img{
-    min-width: 420px;
+    min-width: 380px;
     max-width: 100px;
 }
 
@@ -279,7 +282,7 @@ footer {
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 563px){
     .logoYtextos{
         flex-flow: column;
         align-items: center;
