@@ -204,6 +204,52 @@ header{
     color: white;
     margin: 2rem 20vw;
 }
+
+
+/* Acordion */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 4rem;
+  } 
+
+  .container h2{
+    text-align: start;
+  }
+  
+  .faqs .faq .head {
+    display: flex;
+    padding: 25px 0px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-family: "Fahkwang", sans-serif;
+  }
+  
+  .faqs .faq .head svg {
+    transition: transform 0.25s ease-in;
+  }
+  
+  .faqs .faq .content {
+    height: 0px;
+    overflow-y: hidden;
+    transition: height 0.25s ease-in;
+    border-bottom: 1px solid #afafaf;
+  }
+  
+  /* Cuando esta activo */
+  .faqs .faq.active .head svg {
+    transform: rotate(180deg);
+  }
+
+
 @media only screen and (max-width: 765px){
     .PropertyManagment{
         color: white;
