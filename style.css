@@ -1,11 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: #00316B;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+html{
+scroll-behavior: smooth;
 }
+
+body {
+    background-color: #00316B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 li {
     list-style: none;
 }
@@ -13,24 +19,25 @@ li {
 a {
     text-decoration: none;
 }
+
 /* ----------------------------- Index --------------------------- */
 
 
 /* Header */
-header{
+header {
     background-image: url('assets/img/fondo.jpeg');
-		height: 700px;
-		background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
-        background-position-y: center;
-	}
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-position-y: center;
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 13rem;
 }
 
 
@@ -45,7 +52,7 @@ header{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color:#00316B;
+    background-color: #00316B;
 }
 
 .nav-menu {
@@ -58,14 +65,14 @@ header{
     margin-left: 3rem;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.2rem;
     font-weight: 400;
     color: white;
     transition: 500ms;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #00316B;
 }
 
@@ -89,7 +96,8 @@ header{
 }
 
 .dropdown.active .dropdown-arrow {
-    transform: rotate(90deg); /* Rotate the arrow 90 degrees */
+    transform: rotate(90deg);
+    /* Rotate the arrow 90 degrees */
 }
 
 .dropdown-menu {
@@ -97,7 +105,7 @@ header{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color:  transparent;
+    background-color: transparent;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     overflow: hidden;
@@ -134,19 +142,21 @@ header{
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #47474765;    
+        background-color: #47474765;
         width: 100%;
         border-radius: 0px 0px 10px 10px;
         text-align: start;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        
+
     }
-    .navbar{
+
+    .navbar {
         padding: 1rem 1rem;
 
     }
-    .navbar a img{
+
+    .navbar a img {
         width: 10rem;
     }
 
@@ -159,8 +169,8 @@ header{
         margin: 1rem;
     }
 
-    .nav-link{
-    text-decoration: none;
+    .nav-link {
+        text-decoration: none;
     }
 
     .hamburger {
@@ -185,22 +195,26 @@ header{
         box-shadow: none;
         background-color: transparent;
         border-radius: 0;
-        display: none; /* Hide by default for mobile */
+        display: none;
+        /* Hide by default for mobile */
     }
 
     .dropdown.active .dropdown-menu {
-        display: block; /* Show when dropdown is active */
+        display: block;
+        /* Show when dropdown is active */
     }
 
     .dropdown-menu .dropdown-item {
-        background-color: transparent; /* Ensure dropdown items are visible on mobile */
+        background-color: transparent;
+        /* Ensure dropdown items are visible on mobile */
     }
 
 }
+
 /* FIN NAVBAR */
 
 /* Property Managment */
-.PropertyManagment{
+.PropertyManagment {
     color: white;
     margin: 2rem 20vw;
 }
@@ -214,52 +228,64 @@ header{
     width: 80%;
     padding-top: 50px;
     color: white;
-    padding-bottom: 4rem;
-  } 
+    padding-bottom: 1rem;
+}
 
-  .container h2{
+.container h2 {
     text-align: start;
-  }
-  
-  .faqs .faq .head {
+}
+
+.faqs .faq .head {
     display: flex;
     padding: 25px 0px;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-family: "Fahkwang", sans-serif;
-  }
-  
-  .faqs .faq .head svg {
+}
+
+.faqs .faq .head svg {
     transition: transform 0.25s ease-in;
-  }
-  
-  .faqs .faq .content {
+}
+
+.faqs .faq .content {
     height: 0px;
     overflow-y: hidden;
     transition: height 0.25s ease-in;
     border-bottom: 1px solid #afafaf;
-  }
-  
-  /* Cuando esta activo */
-  .faqs .faq.active .head svg {
+}
+
+/* Cuando esta activo */
+.faqs .faq.active .head svg {
     transform: rotate(180deg);
-  }
+}
 
+.img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    width: 80%;
+    margin: 4rem 0rem 1rem 0rem
+}
+.AIRBNB{
+    padding-bottom: 4rem !important;
+}
 
-@media only screen and (max-width: 765px){
-    .PropertyManagment{
+@media only screen and (max-width: 765px) {
+    .PropertyManagment {
         color: white;
         margin: 2rem 10vw;
     }
-    
+
 }
 
 /* About */
-.about{
+.about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -269,38 +295,43 @@ header{
     font-size: 1rem;
     gap: 20px;
 }
-.text_about{
+
+.text_about {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     width: 400px;
 }
-.text_about p{
-    font-size: 1.3rem;
+
+.text_about p {
+    font-size: 1rem;
 }
-.linea{
+
+.linea {
     height: 2px;
     width: 90px;
     background-color: white;
     margin: .6rem 0rem;
 }
-.about img{
-    min-width: 200px;
-    max-width: 500px;
+
+.about img {
+   width: 20%;
 }
-@media only screen and (max-width: 765px){
-    .about{
+
+@media only screen and (max-width: 765px) {
+    .about {
         margin: 2rem;
     }
-    .text_about p{
+
+    .text_about p {
         font-size: 1rem;
     }
-    
+
 }
 
 /* Enviar Correo */
-.enviarEmail{
+.enviarEmail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,45 +339,79 @@ header{
     background-color: white;
     gap: 1rem;
 }
-.enviarEmail input{
-    padding: .5rem ;
+
+.enviarEmail input {
+    padding: 1rem;
     width: 30%;
 }
-.enviarEmail button{
-    padding: .6rem 2rem;
+
+.enviarEmail button {
+    padding: 1rem 2rem;
     color: white;
     background-color: #00316B;
     border: 1px solid #00316B;
     transition: 500ms;
     border-radius: 0px 3px 3px 0px;
 }
-.enviarEmail button:hover{
+
+.enviarEmail button:hover {
     color: #00316B;
     background-color: white;
     border: 1px solid #00316B;
 }
-@media only screen and (max-width: 765px){
-    .enviarEmail input{
-        padding: .5rem ;        width: 40%;
+
+@media only screen and (max-width: 765px) {
+    .enviarEmail input {
+        padding: 1rem;
+        width: 40%;
     }
 
 }
 
+/* Additonial */
+.additional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.additional-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    width: 45%;
+    gap: .2rem;
 
+}
+.additional img{
+    width: 20rem;
+}
+
+@media only screen and (max-width: 765px) {
+    .additional-text{
+        width: 80%;
+    }
+}
 
 
 /* FOOTER */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #00316B;
     flex-direction: column;
 }
+
 footer p {
     color: gray;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -355,14 +420,15 @@ footer p {
     padding: 2rem 0rem;
     gap: 1rem;
 }
-.redes ul li a{
+
+.redes ul li a {
     color: white;
 }
-.footer img{
+
+.footer img {
     width: 20rem;
 }
 
-@media only screen and (max-width: 563px){
-    
-}
+@media only screen and (max-width: 563px) {}
+
 /* FIN FOOTER */
