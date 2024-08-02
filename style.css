@@ -396,8 +396,14 @@ h2 {
 }
 
 @media only screen and (max-width: 765px) {
+    .additional{
+        margin: 2rem 0rem;
+    }
     .additional-text{
         width: 80%;
+    }
+    .additionalReverse{
+        flex-direction: column-reverse;
     }
 }
 
