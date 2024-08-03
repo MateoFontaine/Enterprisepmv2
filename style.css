@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 hr{
-    height: 1;
+    width: 80%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -394,6 +394,8 @@ h2 {
 .additional img{
     width: 20rem;
 }
+
+
 
 @media only screen and (max-width: 765px) {
     .additional{

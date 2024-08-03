@@ -86,3 +86,5 @@ faqsTitles.forEach((faq) => {
         }
     });
 });
+
+
