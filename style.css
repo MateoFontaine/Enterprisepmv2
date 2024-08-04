@@ -410,6 +410,36 @@ h2 {
 }
 
 
+/* Location */
+.LocationText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.LocationText p{
+    margin: 2rem 20rem;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.textLocation{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 57%;
+    margin: 0rem 10rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
 /* FOOTER */
 footer {
     display: flex;
