@@ -2,6 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 const dropdowns = document.querySelectorAll(".dropdown");
+const internalLinks = document.querySelectorAll("a[href^='#']");
 
 // Toggle mobile menu
 hamburger.addEventListener("click", mobileMenu);
@@ -9,6 +10,7 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    document.body.classList.toggle("no-scroll"); // Desactiva el scroll
 }
 
 // Handle dropdown functionality for mobile
@@ -33,10 +35,18 @@ navLink.forEach(n => n.addEventListener("click", function() {
     }
 }));
 
+// Close mobile menu when clicking on internal links
+internalLinks.forEach(link => {
+    link.addEventListener("click", function() {
+        closeMenu();
+    });
+});
+
 function closeMenu() {
     if (window.innerWidth <= 768) {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
+        document.body.classList.remove("no-scroll"); // Reactiva el scroll
         closeAllDropdowns();
     }
 }
@@ -69,6 +79,7 @@ dropdowns.forEach(dropdown => {
         }
     });
 });
+
 
 
 const faqsTitles = document.querySelectorAll(".faq .head");
